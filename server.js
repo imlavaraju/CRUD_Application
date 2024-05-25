@@ -11,9 +11,9 @@ const employeeRoutes = require("./routes/employeeRoutes");
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
-
-const PORT = process.env.port || 5000;
 dotEnv.config();
+const PORT = process.env.port || 5000;
+
 
 // mongoose to connect
 mongoose
